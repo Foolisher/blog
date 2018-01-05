@@ -6,15 +6,15 @@
 title: SimplerTech
 subtitle: wanggen
 description:
-author: Simpler
+author: Simpler(576192941@qq.com)
 language: zh-Hans
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://fuxiaotech.top/
 root: /
-permalink: :year/:month/:day/:title/
+permalink: /:title/
 permalink_defaults:
 
 # Directory
@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -78,4 +78,16 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  - type: git
+    repo: git@github.com:Foolisher/blog.git
+    branch: master
+    message: fuxiao
+  - type: rsync
+    host: 39.106.205.117
+    user: root
+    root: /home/www/public/
+    port: 22
+    delete: true
+    verbose: true
+    ignore_errors: false
+
