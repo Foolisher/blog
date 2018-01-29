@@ -78,10 +78,10 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  - type: git
-    repo: git@github.com:Foolisher/blog.git
-    branch: master
-    message: fuxiao
+#  - type: git
+#    repo: git@github.com:Foolisher/blog.git
+#    branch: master
+#    message: fuxiao
   - type: rsync
     host: 39.106.205.117
     user: root
